@@ -119,12 +119,12 @@ const gameOver = id => {
   //タイムアップ表示後に判定結果を表示する
   setTimeout(() => {
     const result = confirm(rankCheck(score));
-    }, 10);
-
-  //OKボタンがクリックされたらリロードする
-  if(result == true) {
+    
+    //OKボタンがクリックされたらリロードする
+    if(result == true) {
     window.location.reload();
-  }
+    }
+  }, 10);
 };
 
 //カウントダウンタイマー
